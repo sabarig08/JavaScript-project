@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+       // problem 1
+        let num=21;
+        for(let n=0;n<=100;n++ )
+        {
+        if(n%3==0 && n%5==0){
+           console.log("FizzBuzz");
+         }
+        else if(n%3==0){
+           console.log("Fizz");
+         }
+        else if(n%5==0){
+           console.log("Buzz");
+        }
+        else{
+            console.log(n);
+        }
+        }
+
+
+        //problem 2
+
+        let str="ranar";
+        let str1=str.split("").reverse().join("");
+        if(str==str1){
+            console.log("palindrome");
+        }
+        else{
+            console.log("Not a Palindrome");
+        }
+
+
+        //problem 3
+       let arr=[1,4,5,6,8,10];
+       let max=0;
+       for (let i=0;i<arr.length;i++){
+        if(max<arr[i])
+        max=arr[i];
+       }
+       console.log("The largest Number is: ",max);
+
+
+
+    //problem 4
+    function name(str){
+        const count={};
+        for(let i=0;i<str.length;i++){
+            const char=str[i];
+            if(count[char]){
+                count[char]++;
+            }
+            else{
+                count[char]=1;
+            }
+            }
+            return count;
+        }
+       const Str="hello";
+       console.log(name(Str));
+    
+
+
+        //problem 6
+        let fact=1;
+        function factorial(number){
+        for(let i=1;i<=number;i++)
+          {
+            fact=fact*i;
+          }
+          return fact;
+        };
+        factorial(4);
+        console.log("Factorial of the given number is: " ,fact);
+
+
+        //problem 7
+        let celsius=37;
+        fahrenheit=((celsius*9)/5+32);
+        console.log("Fahrenheit : "+fahrenheit);
+
+       
+
+        //problem 8
+
+        let array=[0,1,2,3,4,5,6,7,8,9];
+        console.log(array);
+        for(let i=0;i<array.length;i++){
+            if(array[i+1]!=array[i]+1)
+            console.log("Missing From the Array: ",array[i]+1);
+        }
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
